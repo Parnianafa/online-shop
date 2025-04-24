@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake House</title>
+    <!-- <link rel="stylesheet" href="asset/css/all.min.css"> -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/home.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="asset/Font/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="asset/img/icon1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-------HEADER--------->
+     <div class="header"> 
+    
+    <div class="container">
+    <!-------NAVBAR--------->
+    <div class="navbar-container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+    
+          <a class="navbar-brand" href="#">
+            <h6 class="logo">Cake house</h6>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+            <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CATALOGUE
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#catalogue">CAKES</a></li>
+                  <li><a class="dropdown-item" href="#catalogue">DRINKS</a></li>
+                  <li><a class="dropdown-item" href="#catalogue">DESSERTS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+        </div> 
+    
+        <div class="search-form"> 
+            <form class="d-flex">
+             <div class="search-btn-box">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+             </div>
+              <a class="cart-icon" href="cart.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true">
+                  <!-- <a href="products.html"></a> -->
+                </i>
+                <span class="position-absolute  translate-middle p-2 rounded-circle cart-btn-counter">
+                  <span class="cart-btn-num" id="cart-s-count">0</span>
+                </span>
+             
+              </a>
+
+            </form>
+        </div>
+    </div> 
+        </div>
+      </nav>
+      
+    </div>
+</div>
+    <!-------NAVBAR--------->
+    <div class="header-content">
+      <h1 class="header-title">
+        we make everything by </br>hand with the best </br>possible ingredients. 
+      </h1>
+      <button class="header-btn"><a class="header-btn-link" href="products.html">PRODUCTS</a></button>
+    </div>
+</div>
+    <!-------HEADER--------->
+
+   <!-------CATEGORY--------->
+   <div class="category" id="catalogue">
+    <h2 class="category-title">- CATALOGUE -</h2>
+    <div class="category-img-box">
+        <div class="category-img category-one">
+            <img src="asset/img/Cake.jfif" alt="">
+            <a class="category-img-name" href="cake-catalogue.html">cakes</a>
+        </div>
+        <div class="category-img category-two">
+            <img src="asset/img/Toffee Banana.jfif" alt="">
+            <a class="category-img-name" href="drinks-catalogue.html">drinks</a>
+        </div>
+        <div class="category-img category-three">
+            <img src="asset/img/Extra.jfif" alt="">
+            <a class="category-img-name" href="dessert-catalogue.html">desserts</a>
+        </div>
+    </div>
+   </div>
+   <!------------CATEGORY--------->
+
+   <!-------THIRD SECTION--------->
+   <div class="info-box">
+        <div class="info-img">
+            <!-- <img src="asset/img/tart.jfif" class="info-box-img" alt=""> -->
+        </div>
+    <!-----------SUBSCRIBE---------->
+        <div class="info-right-box">
+            <div class="info-login-box">
+              <h3 class="info-login-box-title">DON'T MISS A THING</h3>
+              <h4 class="info-login-box-text">join the healthy form</h4>
+                <input class="input input-user" type="text" placeholder="username" id="username">
+                <input class="input input-pass" type="password" placeholder="password" id="password">
+
+                <a class="subscribe-link" href="subscribe.html">SUBSCRIBE</a>  <!--LOGIN FUNC-->
+                <button class="log-in" id="signIn">LOGIN</button>   <!--LOGIN FUNC-->
+
+            </div>
+            
+        </div>
+   </div>
+    <!-----------SUBSCRIBE---------->
+
+   <!---------THIRD SECTION---------->
+
+   <!-----------OUR STORY------------>
+   <div class="story"  id="about">
+        <h3 class="story-title">- OUR STORY -</h3>
+        <p class="story-text">We are exactly what you are looking for. Yes, we are an FSSAI certified online cake and Bakery Company that specializes in delivering absolutely lip-smacking delicacies. Currently, we are delivering cakes in Gurgaon, Delhi, Noida, Ghaziabad, Bangalore and Hyderabad. We are not just a bakery, we are not just bakers. In fact, we are just like you, a bunch of food lovers fascinated with sweet indulgence, who dreamt of creating an appetizing fairy land of divine delicacies that relishes the utmost desires.</p>
+   </div>
+   <!-----------OUR STORY------------>
+
+   <!-------------SLIDER------------->
+<div class="slider">
+   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="asset/img/pexels-delphine.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="asset/img/Strawberry Mousse Tart Recipe.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="asset/img/bread.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+   <!-------------SLIDER------------->
+
+   <!---------OUR ADVANTAGES-------->
+   <div class="advantages">
+    <h2 class="advantages-title">- OUR ADVANTAGES -</h2>
+    <div class="advantages-img-box">
+        <div class="advantages-img advantages-one">
+            <!-- <img src="asset/img/decor.jfif" alt=""> -->
+            <h6 class="advantages-img-name">high quality</h6>
+        </div>
+        <div class="advantages-img advantages-two">
+            <!-- <img src="asset/img/The Espresso Station.jfif" alt=""> -->
+            <h6 class="advantages-img-name">sweet gift</h6>
+        </div>
+        <div class="advantages-img advantages-three">
+            <!-- <img src="asset/img/Waffles.jfif" alt=""> -->
+            <h6 class="advantages-img-name">fast delivery</h6>
+        </div>
+    </div>
+   </div>
+   <!---------OUR ADVANTAGES-------->
+
+
+   <!-------------FOOTER------------>
+   <div class="footer" id="contact">
+     <h6 class="footer-title">Cake house</h6>
+
+    <div class="footer-box">
+     <div class="footer-menu">
+     <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CATALOG</a></li>
+        <li><a href="#">CONTACT</a></li>
+     </ul>
+    </div>
+    <div class="footer-text">
+        <p class="footer-text-2">
+        We are exactly what you are looking for. Yes, we are an <br>
+         FSSAI certified online cake and Bakery Company that specializes in delivering absolutely lip-smacking delicacies.
+        </p>
+    </div>
+    <div class="footer-social">
+        <ul>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
+         </ul>
+    </div>
+  </div>
+ </div>
+   <!-----------FOOTER------------>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- <script src="asset/js/submit.js"></script> -->
+    <script src="asset/js/jquery/jquery.min.js"></script>
+    <script src="asset/js/login.js"></script>
+    <script src="asset/js/cart.js"></script>
+
+
+
+</body>
+</html>
