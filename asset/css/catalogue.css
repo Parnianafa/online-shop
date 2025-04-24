@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* NAVBAR*/
+.navbar-brand{
+    margin-left: 115px;
+}
+.logo{
+    font-family:  'Dancing Script', cursive;
+    font-size: 2rem; 
+    color: #e7c190;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link:hover{
+    color: white;
+}
+.nav-link::after{
+    content: '';
+    width: 88%;
+    height: 2px;
+    background: #e8a180;
+    display: block;
+    position: absolute;
+    left: 4px;
+    bottom: 3px;
+    opacity: 0;
+	transition:linear 0.5s; 
+}
+.nav-sub{
+    margin-right: 15px;
+    color: white;
+}
+.nav-link:hover::after{
+    opacity: 1;
+}
+.me-2{
+    border-radius: 25px;
+}
+.dropdown-item {
+    color: black;   
+}
+.btn-outline-success{
+    border-radius: 25px;
+    border-color: #c9a271;
+    color: white;
+    background-color:#c9a271 ;
+}
+.btn-outline-success:hover{
+    background-color: #c9a271;
+    border-color: #c9a271;
+}
+.btn:hover{                 /*search btn*/
+    color: #c9a271;
+    background-color: unset;
+}
+.search-btn-box{
+    display: flex;
+}
+.d-flex{
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+.cart-icon{
+    color: white;
+    cursor: pointer;
+}
+.cart-btn-counter{
+    color: white;
+    border: 1px solid;
+}
+.cart-btn-num{
+    width: 2px;
+    height: 2px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*********************NAVBAR********************/
+
+/*********************HEADER********************/
+.header{
+    height: 100vh;
+    background-image: linear-gradient(rgb(0 0 0 / 21%), rgb(0 0 0 / 18%)) ,url("../img/Plum\ Frangipane\ Tart.png");
+    /* background-image: url("../img/"); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+}
+.header-title{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    color: white;
+}
+.header-btn{
+    margin-top: 30px;
+    padding: 8px 20px;
+    color: white;
+    background-color: burlywood;
+    border-color: burlywood;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.header-btn:hover{
+    background-color: #c9a271;
+}
+.header-btn-link {
+    color: white;
+    text-decoration: none;
+}
+/*********************HEADER********************/
+
+/*******************CAT BODY********************/
+.cat-box{
+    padding: 300px 0 300px 0;
+}
+.cat-body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+}
+
+.cat-img img{
+    width: 300px;
+    height: 300px;
+    box-shadow: -2px 6px 9px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+}
+.cat-container{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+.row-two{
+    flex-direction: row-reverse;
+}
+.text-row-two{
+    align-items: flex-end;
+}
+.title-row-two{
+    align-items: flex-end;
+
+}
+.cat-text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.text-row-two p{
+    text-align: right;
+}
+/**********************FOOTER********************/
+.footer{
+    height: 50vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)) ,url("../img/footer.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.footer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 47px;
+}
+.footer-title{
+     font-family: 'Dancing Script', cursive;
+     font-size: 3rem;
+     color: white;
+     text-align: center;
+     padding: 35px 0px 0 0;
+     letter-spacing: 4px;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.footer-text{
+    color: white;
+    padding: 0 74px;
+}
+.footer-menu ul li , .footer-social ul li {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+ }
+ 
+.footer-menu ul li a, .footer-social ul li a{
+   text-decoration: none;
+   color: white;
+}
+
+
+/**********************FOOTER********************/

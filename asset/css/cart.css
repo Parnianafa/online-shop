@@ -1,0 +1,126 @@
+.cart-container{
+    height: 100vh;
+    /* display: flex; */
+    /* background-color: rgb(179, 192, 187); */
+    width: 100%;
+}
+.cart-container{ 
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px dashed rgb(204, 167, 121);
+    padding: 30px;
+    grid-template-columns: 400px 2fr 1fr 1fr;
+}
+.cart-box-all{
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    max-height: 90vh;
+    margin: 50px;
+    overflow-y: auto;
+}
+.cart-item-desc{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 400px;
+}
+.cart-item-price{
+    min-width: 20px;
+    max-width: 30px;
+}
+.cart-counting{
+    min-width: 70px;
+    max-width: 80px;
+}
+.cart-ex-img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 7px 1px rgb(161 137 106);
+}
+.dec-btn ,.inc-btn{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.cart-input {
+    width: 30px;
+    border-radius: 28%;
+    margin: 0 8px 0 8px;
+    text-align: center;
+}
+
+.cart-sp-show{
+  display: none;
+}
+.single-cart-payment-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-image: linear-gradient(rgb(0 0 0 / 13%), rgb(0 0 0 / 20%)) ,url("../img/IMG_4773.JPEG");
+
+}
+.single-cart-count{
+    padding-bottom: 10px;
+}
+.single-cart-btn {
+     color: #c9a271;
+     text-decoration: none;
+     border-radius: 25px;
+     padding: 2px 8px;
+     border: 1px solid #cca779;
+}
+.single-cart-btn:hover{
+    background-color: #cca779;
+    outline: none;
+    color: white;
+
+}
+
+
+.single-cart-no-item{
+    background-color: rgb(240 238 236);
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.single-cart-no-item-title{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 3px;
+    font-size:30px;
+    color: #a3512b;
+}
+.single-cart-no-item-text{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    font-size:medium;
+    color: #776a64;
+    padding-top: 5px;
+
+}
+.single-cart-home-link{
+    outline: none;
+    padding: 11px;
+    border-radius: 10px;
+    border: 1px solid burlywood;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: burlywood;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 21px;
+    width: 205px;
+}
+.single-cart-home-link:hover{
+    background-color: burlywood;
+    color: white;
+}
+/* .cart-container-res{
+    display: none;
+} */

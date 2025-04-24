@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* NAVBAR*/ 
+.navbar-brand{
+    margin-left: 115px;
+}
+.logo{
+    font-family:  'Dancing Script', cursive;
+    font-size: 2rem; 
+    color: #e7c190;
+}
+.navbar-collapse{
+margin-left: 146px;
+}
+
+.nav-sub{
+    margin-right: 15px;
+    color: white;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link::after{
+    content: '';
+    width: 88%;
+    height: 2px;
+    background: #e8a180;
+    display: block;
+    position: absolute;
+    color: white;
+    left: 4px;
+    bottom: 3px;
+    opacity: 0;
+	transition:linear 0.5s; 
+}
+.nav-link:hover{
+    color: white;
+}
+.nav-link:hover::after{
+    opacity: 1;
+}
+.dropdown-item {
+    color: black;   
+}
+.me-2{
+    border-radius: 25px;
+}
+.btn-outline-success{
+    border-radius: 25px;
+    border-color: #c9a271;  
+    color: #c9a271;
+}
+.btn-outline-success:hover{
+    background-color: #c9a271;
+    border-color: #c9a271;
+}
+.btn:hover{                 /*search btn*/
+    color: white;
+}
+.search-btn-box{
+    display: flex;
+}
+.d-flex{
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+.cart-icon{
+    color: grey;
+    cursor: pointer;
+}
+.cart-btn-counter{
+    color: #cca779;
+    border: 1px solid;
+}
+.cart-btn-num{
+    width: 2px;
+    height: 2px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}   
+/*********************NAVBAR********************/
+
+/*********************HEADER********************/
+.header{
+    height: 100vh;
+    background-image: linear-gradient(rgb(0 0 0 / 21%), rgb(0 0 0 / 18%)) ,url("../img/IMG_4813.JPEG");
+    /* background-image: url("../img/Pomegranate.png"); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+}
+.header-title{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    color: #fffefd;
+}
+.header-btn{
+    margin-top: 30px;
+    padding: 8px 20px;
+    color: white;
+    background-color:#cca779;/* burlywood;*/
+    border-color: burlywood;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.header-btn:hover{
+    background-color: #c9a271;
+    /* color: white; */
+}
+.header-btn-link{
+    color: white;
+    text-decoration: none;
+}
+
+/*********************HEADER********************/
+
+/*********************CONTENT********************/
+.content{
+    min-height: 150vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 80px 29px 80px 80px;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.inner-content{
+    display: flex;
+    margin-right: 20px;
+    width: 100%;
+    /* width: calc(100% - 385px); */
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+} 
+.product-box{
+    border: 2px solid #d7c3a2;
+    width: 226px;
+    height: 495px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;  
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.product-photo-img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 7px 1px rgb(161 137 106);
+}
+.product-bottom-box{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.product-explanation{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px 0 16px 0;
+}
+.product-explanation-title{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size:small;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #9a6454;
+}
+/* .product-title{
+    max-height: 24px;
+    min-height: 24px;
+    overflow: hidden;
+} */
+.product-bottom-box button{
+    margin: 10px;
+}
+.product-bottom-more, .product-bottom-cart{
+    margin-top: 30px;
+    padding: 8px 20px;
+    color: white;
+    background-color:#cca779;/* burlywood;*/
+    border-color: burlywood;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.product-bottom-more:hover, .product-bottom-cart:hover{
+    background-color: #c9a271;
+     color: white;
+}
+.content-context{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.content-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #b17931;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+.content-context button{
+    border-radius: 25px;
+    padding: 8px 20px;
+    border: 1px solid #cca779;
+}
+.content-btn-cart{
+    background-color:#cca779;
+    color: white;
+    outline: none;
+}
+.content-btn-cart:hover{
+    background-color: white;
+    border-color:#cca779;
+    color:#cca779 ;
+    border: 1px solid #cca779;    
+}
+.cart-btn-num{
+    width: 8px;
+    height: 7px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.cart-btn-counter{
+    background-color: #e9dbcd;
+    color: #cca779;
+    left: 6px;
+
+}
+.content-btn-home{
+    background-color: white;
+    border-color:#cca779;
+}
+.content-btn-home a{
+    color: #c9a271;
+    text-decoration: none; 
+}
+.content-btn-home:hover{
+    background-color:#cca779;
+    outline: none;
+}
+.content-btn-home a:hover{
+    color: white;
+    text-decoration: none; 
+}
+.display-main{
+    display: none;
+    background-color:#cca779;
+    color: white;
+    outline: none;
+}
+.inner-value{
+    color: #726d6d;
+    letter-spacing: 1px;
+    font-weight: normal;
+    max-height: 50px;
+    min-height: 24px;
+    text-align: left;
+    font-size: small;
+}
+
+/***********MODAL*********/
+.modal-body{
+    display: flex;
+}
+.modal-img-box{
+    display: flex;
+    margin: 13px 27px 0px 0px;
+}
+.modal-img{
+    width: 100px;
+    height: 100px;
+}
+.modal-name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.btn-secondary, .btn-primary{
+    padding: 8px 20px;
+    color: white;
+    background-color:#cca779;/* burlywood;*/
+    border-color: burlywood;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.btn-primary:hover, .btn-secondary:hover{
+    background-color: #c9a271;
+    color: white;
+}
+.modal-footer{
+    display: flex;
+    justify-content: center;
+}
+.modal-title{
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    color: rgb(177, 121, 49);
+}
+
+
+/***********MODAL*********/
+/*********SEARCHED*******/
+
+.product-box-s {
+    border: 2px solid #ebebeb;
+    width: 760px;
+    height: 223px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+/* .btn-outline-success{
+    margin-right: 20px;
+} */
+.product-explanation-s{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+    justify-content: center;
+    width: 345px;
+
+}
+.product-bottom-box-s{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+.product-photo-s{
+    margin-right: 20px;
+}
+.product-bottom-more-s, .product-bottom-cart-s {
+    padding: 8px 13px;
+}
+/*********SEARCHED*******/
+
+/***********************CART*********************/
+.cart{
+    width: 385px;
+    /* margin-right: 20px; */
+    border: 1px solid #e4d8d7;
+    height: 150vh;
+    position: absolute  ;  /*Bi vazn mishe va rooye content fix mishe*/
+    z-index: 2;
+    background-color: white;
+    left: -385px;
+    transition: all 0.6s ;
+    min-height: 155vh;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.cart-show{
+    left: 0;
+    transition: all 0.6s ;
+}
+
+.cart-info{
+    display: flex;
+    flex-direction: column;
+}
+.cart-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #cca779;
+    padding: 10px;
+    
+}
+.cart-close-btn{
+    right: 0;
+}
+.to-single-cart{
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    color: #b17931;
+    font-size: larger;
+    right: 34px;
+    position: absolute;
+}
+
+.cart-info span{
+    margin-bottom: 10px;
+}
+.cart-input{
+    width: 30px;
+    border-radius: 28%;
+    margin: 0 8px 0 8px;
+    text-align: center;     /*The value of input will be located in center*/
+}
+.cart-img-content{
+    text-align: center;
+}
+.cart-img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 7px 1px rgb(161 137 106);
+}
+.dec-btn ,.inc-btn{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.cart-payment-box{
+    position: relative;
+    left: 0;
+    margin: 0 0 13px 13px;
+    bottom: 0;
+}
+.cart-title{
+    letter-spacing: 10px;
+    font-size: large;
+}
+.cart-title span{
+    text-shadow: 0 0 black;
+}
+
+
+
+
+
+
+/***********************CART*********************/
+
+
+/*********************CONTENT********************/
+
+/**********************FOOTER********************/
+.footer{
+    height: 50vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)) ,url("../img/footer.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.footer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 47px;
+}
+.footer-title{
+     font-family: 'Dancing Script', cursive;
+     font-size: 3rem;
+     color: white;
+     text-align: center;
+     padding: 35px 0px 0 0;
+     letter-spacing: 4px;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.footer-text{
+    color: white;
+    padding: 0 74px;
+}
+.footer-menu ul li , .footer-social ul li {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+ }
+ 
+.footer-menu ul li a, .footer-social ul li a{
+   text-decoration: none;
+   color: white;
+}
+
+
+/**********************FOOTER********************/

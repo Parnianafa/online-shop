@@ -1,0 +1,133 @@
+/* @media only screen and (min-width: 365px) and (max-width: 500px){ */
+@media only screen and (max-width: 418px){
+
+/**** NAVBAR*****/
+.search-form{
+        display: none; 
+}
+.navbar-brand {
+    margin-left: 0;
+}
+.navbar-nav{   /****************??????????????????*********/
+    position: absolute;
+    right: 100px;
+}
+/**** NAVBAR****/
+/***********HEADER**********/
+.header {
+        height: 100vh;
+        /* background-image: url(../img/header-ohne-txt.jpg); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+}
+    
+.header-title {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    color: #fbf6f4;
+    font-size: large;
+    padding: 0;
+}
+.header-btn {
+    padding: 8px 20px;
+    margin-top: 10px;
+    margin-left: 0;
+} 
+/***********HEADER**********/
+/**********CATEGORY*********/
+.category {
+    height: 150vh;
+}
+.category-img {
+    display: flex;
+    flex-direction: column;
+    margin:0 0 50px 0;
+}
+.category-img-box {
+    flex-direction: column;
+}
+.category-img img {
+    width: 150px;
+    height: 150px;
+}
+/************CATEGORY*********/
+/*******THIRD SECTION*********/
+.info-box{
+    grid-template-columns: auto;
+    height: 80vh;
+}
+.info-img {
+    display: none;
+}
+/**********THIRD SECTION*********/
+/***********OUR STORY***********/
+.story{
+    height: 70vh;
+}
+.story-text {
+    padding: 0;
+    width: 300px;
+}
+.story-title {
+    margin-bottom: 85px;
+}
+/**********OUR STORY*********/
+/***********SLIDER***********/
+.slider{
+    display: none;
+}
+/***********SLIDER***********/
+/*******OUR ADVANTAGES*******/
+.advantages {
+    height: 150vh;
+}
+.advantages-img-box {
+    flex-direction: column;
+}
+.advantages-img{
+    margin-bottom: 88px;
+    margin-right: 0;
+}
+
+/*******OUR ADVANTAGES*******/
+/**********FOOTER***********/
+.footer-box {
+    padding-top: 9px;
+    flex-direction: column;
+}
+.footer {
+    height: 95vh;
+}
+.footer-title {
+    padding: 26px 0px 15px 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 59px;
+    margin-top: 50px;
+}
+/**********FOOTER***********/
+/**********************************SUBSCRIBE PAGE*********************/
+.info-right-box {
+    box-shadow: none;
+}
+.info-login-box {
+    width: 258px;
+}
+
+
+/*********************************PRODUCTS****************************/
+
+
+
+
+
+
+
+
+
+
+
+
+}

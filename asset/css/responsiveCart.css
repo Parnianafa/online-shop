@@ -1,0 +1,57 @@
+@media only screen and (max-width: 418px){
+    
+    /* .cart-container {
+        grid-template-rows: 189px 108px 49px 47px;
+        justify-items: center;
+    
+    }
+.cart-box-all {
+    display: flex;
+    flex-direction: column; 
+    min-height: 60vh;
+    max-height: 72vh;
+} */
+.cart-container{
+    display: none;
+}
+.cart-container-res{
+    display: flex;
+    /* grid-template-rows: 180px 108px 49px 47px; */
+    /* justify-items: center; */
+    /* width: 100px; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-box-all {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    max-height: 72vh;
+} 
+.cart-ex-img-container{
+   padding-bottom: 26px;
+}
+.cart-item-desc{
+    padding-bottom: 10px;
+}
+.cart-item-price-container{
+    padding-bottom: 10px;
+
+}
+.single-cart-no-item-text {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    font-size: small;
+    color: #776a64;
+    padding-top: 5px;
+    text-align: center;
+}
+.single-cart-no-item-title {
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+
+}

@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* NAVBAR*/
+.navbar-brand{
+    margin-left: 115px;
+}
+.logo{
+    font-family:  'Dancing Script', cursive;
+    font-size: 2rem; 
+    color: #a3512b;
+}
+.navbar-nav li{
+    margin-right: 15px;
+    color: grey;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link::after{
+    content: '';
+    width: 88%;
+    height: 2px;
+    background: #e8a180;
+    display: block;
+    position: absolute;
+    left: 4px;
+    bottom: 3px; 
+    opacity: 0;
+	transition:linear 0.5s; 
+}
+.nav-link:hover::after{
+    opacity: 1;
+}
+.me-2{
+    border-radius: 25px;
+}
+.btn-outline-success{
+    border-radius: 25px;
+    border-color: #994721;
+    color: #994721;
+}
+.btn-outline-success:hover{
+    background-color: #c9a271;
+    border-color: #c9a271;
+}
+.btn:hover{                 /*search btn*/
+    color: white;
+}
+.search-btn-box{
+    display: flex;
+}
+.d-flex{
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+.cart-icon{
+    color: grey;
+    cursor: pointer;
+}
+.cart-btn-counter{
+    color: #cca779;
+    border: 1px solid;
+}
+.cart-btn-num{
+    width: 2px;
+    height: 2px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*********************NAVBAR********************/
+
+/*********************HEADER********************/
+.header{
+    height: 100vh;
+    /* background-image: linear-gradient(rgb(0 0 0 / 21%), rgb(0 0 0 / 18%)) ,url("../img/IMG_4767.JPEG"); */
+    background-image: url("../img/header-ohne-txt.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+}
+.header-title{
+    padding-left: 380px;
+    padding-top: 36px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    color: #a3512b;
+}
+.header-btn{
+    margin-top: 30px;
+    margin-left: 320px;
+    padding: 8px 20px;
+    color: white;
+    background-color: burlywood;
+    border-color: burlywood;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.header-btn:hover{
+    background-color: #c9a271;
+}
+.header-btn-link {
+    color: white;
+    text-decoration: none;
+}
+/*********************HEADER********************/
+
+/*********************CATEGORY********************/
+.category{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(0 0 0 / 13%), rgb(0 0 0 / 20%)) ,url("../img/IMG_4773.JPEG");
+    background-attachment: fixed;
+}
+.category-title{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6px;
+}
+.category-img-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.category-img{
+    margin-right: 30px;
+    cursor: pointer;
+    box-shadow: -2px 6px 9px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+}
+.category-img img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 7px;
+}
+.category-img-name{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size:larger;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*********************CATEGORY********************/
+
+/*******************THIRD SECTION*****************/
+.info-box{
+    display: grid;
+    height: 70vh;
+    grid-template-columns: auto auto;
+}
+.info-img{
+    background-image: url("../img/Hummingbird.png");
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.info-img img{
+    width: 300px;
+}
+.info-right-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-login-box{
+    display: grid;
+    width: 334px;
+    grid-gap: 20px;
+}
+.info-login-box-title{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    margin: -38px;
+    text-align: center;
+}
+.info-login-box-text{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #deb887;
+    margin: -27px 0 35px 0;
+    text-align: center;
+}
+.input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgb(222 184 135);
+} 
+.log-in{
+    background-color: burlywood;
+    outline: none;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+}
+.subscribe-link{
+    background-color: burlywood;
+    outline: none;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.log-in:hover, .subscribe-link:hover{
+    background-color: #c9a271;
+}
+.invalid{
+    box-shadow: 0px 2px 2px #9b7e59;
+}
+
+
+/*******************THIRD SECTION*****************/
+
+/********************OUR STORY*******************/
+.story{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.story-title{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6px;
+    margin-top: 8px;
+}
+.story-text{
+    text-align: center;
+    padding: 25px 211px 0;
+}
+
+/********************OUR STORY*******************/
+
+/********************SLIDER*********************/
+.d-block{
+    height: 100vh;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100px;
+}
+/********************SLIDER************************/
+
+/********************OUR ADVANTAGES****************/
+.advantages{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240 243 246);
+}
+.advantages-title{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+.advantages-img-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.advantages-img{
+    margin-right: 50px;
+    background-size: cover;
+    box-shadow: -2px 6px 9px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position:relative ;
+}
+.advantages-one{
+    background-image: url('../img/NuttyEspressoCake.jfif');
+}
+.advantages-two{
+    background-image: url('../img/Boîte\ de\ macarons.jfif');
+}
+.advantages-three{
+    background-image: url('../img/tart.jfif');
+}
+.advantages-img img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 7px;
+    border-radius: 50%;
+}
+.advantages-img-name{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size:larger;
+    font-weight: bold;
+    position: absolute;
+    top: 204px;
+    left: 42px;
+    padding-top: 10px;
+}
+
+/*******************OUR ADVANTAGES****************/
+
+
+/**********************FOOTER********************/
+.footer{
+    height: 50vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)) ,url("../img/footer.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.footer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 47px;
+}
+.footer-title{
+     font-family: 'Dancing Script', cursive;
+     font-size: 3rem;
+     color: white;
+     text-align: center;
+     padding: 35px 0px 0 0;
+     letter-spacing: 4px;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.footer-text{
+    color: white;
+    padding: 0 74px;
+}
+.footer-menu ul li , .footer-social ul li {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+ }
+ 
+.footer-menu ul li a, .footer-social ul li a{
+   text-decoration: none;
+   color: white;
+}
+
+
+/**********************FOOTER********************/
