@@ -51,7 +51,7 @@ $(document).ready(function(){
     if(cart.length <= 0){
      emptyCart = '<div class= "single-cart-no-item"><span class= "single-cart-no-item-title">Your cart is empty!</span>';
      emptyCart += '<span class= "single-cart-no-item-text">Looks like you have not made any choice yet</span>';
-     emptyCart += '<a class="single-cart-home-link" href="home.html">HOME</a>';
+     emptyCart += '<a class="single-cart-home-link" href="index.html">HOME</a>';
      emptyCart += '</div>';
      $("#mainContainer").html(emptyCart);
     }
